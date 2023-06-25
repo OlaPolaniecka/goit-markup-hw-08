@@ -1,0 +1,32 @@
+.header-contact {
+  display: flex;
+  gap: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  &__link {
+    font-size: $fontSizeSmall;
+    font-weight: 500;
+    line-height: 16px;
+    color: $contactColor;
+
+    &:hover {
+      color: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover svg {
+      fill: $accentColor;
+    }
+  }
+  &__envelope-icon {
+    margin-right: 10px;
+    fill: $contactColor;
+  }
+
+  &__smartphone-icon {
+    margin-right: 10px;
+    fill: $contactColor;
+  }
+}

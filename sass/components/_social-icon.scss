@@ -1,0 +1,33 @@
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+  margin-bottom: 30px;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover svg {
+      fill: $buttonColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__svg {
+    fill: $social-iconColor;
+    margin: 12px;
+  }
+}

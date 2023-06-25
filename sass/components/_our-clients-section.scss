@@ -1,0 +1,46 @@
+.our-clients-section {
+  color: $textColor;
+  font-size: $fontSizeTitle;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0;
+  }
+
+  &__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid #2196f3;
+    }
+
+    &:hover svg {
+      fill: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__icon {
+    fill: $social-iconColor;
+  }
+}

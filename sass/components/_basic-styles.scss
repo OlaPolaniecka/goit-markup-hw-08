@@ -1,0 +1,95 @@
+ul {
+  list-style-type: none;
+}
+
+menu {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+figure.portfolio-product__border {
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+input {
+  display: block;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+input:focus + svg {
+  fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea {
+  margin-top: 4px;
+  display: block;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+textarea:focus-within {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+div.portfolio-product__container:hover div.portfolio-product__overlay {
+  transform: translateY(0);
+}
