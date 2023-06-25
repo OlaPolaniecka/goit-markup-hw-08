@@ -1,0 +1,89 @@
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  position: fixed;
+  background-color: $buttonColor;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+
+  &__close-btn {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    &:hover {
+      fill: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 48px;
+  }
+
+  &__link {
+    color: $textColor;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+
+    &:hover {
+      color: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__link-tel {
+    color: $accentColor;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+  }
+
+  &__link-mail {
+    color: $contactColor;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+  }
+
+  &__social-list {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__social-link {
+    color: $accentColor;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+
+    &--line {
+      margin-left: 10px;
+      width: 1px;
+      height: 22px;
+      color: rgba(33, 33, 33, 0.2);
+    }
+  }
+}

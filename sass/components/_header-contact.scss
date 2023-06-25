@@ -4,6 +4,13 @@
   margin-top: 32px;
   margin-bottom: 32px;
 
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 101px;
+  }
+
   &__link {
     font-size: $fontSizeSmall;
     font-weight: 500;

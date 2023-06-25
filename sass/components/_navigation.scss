@@ -1,7 +1,15 @@
 .navigation {
   display: none;
   align-items: center;
-  margin-right: 94px;
+
+  @include tablet {
+    display: flex;
+    margin-left: 83px;
+  }
+
+  @include desktop {
+    margin-right: 94px;
+  }
 
   &__menu {
     display: flex;
