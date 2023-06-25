@@ -1,9 +1,9 @@
 .what-we-do-section {
+  display: none;
   color: $textColor;
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
-  display: flex;
   justify-content: center;
 
   &__list {

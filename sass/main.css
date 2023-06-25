@@ -27,18 +27,23 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   max-width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 figure.portfolio-product__border {
   margin: 0 auto;
-}
-
-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
 }
 
 label {
@@ -104,6 +109,7 @@ div.portfolio-product__container:hover div.portfolio-product__overlay {
   line-height: 31px;
   margin-top: 24px;
   margin-bottom: 25px;
+  margin-left: 15px;
   color: #000000;
 }
 .header-logo__hightlight {
@@ -111,10 +117,9 @@ div.portfolio-product__container:hover div.portfolio-product__overlay {
 }
 
 .navigation {
-  display: none;
-  margin-right: 453px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  margin-right: 94px;
 }
 .navigation__menu {
   display: flex;
@@ -735,6 +740,7 @@ div.portfolio-product__container:hover div.portfolio-product__overlay {
 }
 
 .section-hero {
+  display: none;
   width: 1600px;
   height: 600px;
   max-width: 100%;

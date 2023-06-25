@@ -26,18 +26,21 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   max-width: 100%;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 figure.portfolio-product__border {
   margin: 0 auto;
-}
-
-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
 }
 
 label {

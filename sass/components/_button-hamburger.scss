@@ -1,0 +1,13 @@
+.button-hamburger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    fill: $accentColor;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
