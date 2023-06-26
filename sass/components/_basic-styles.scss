@@ -18,17 +18,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-
 .container {
   width: 480px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 
   @include tablet {
     max-width: 768px;

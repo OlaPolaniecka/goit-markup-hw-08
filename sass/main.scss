@@ -1,9 +1,6 @@
 @import "./utils/mixins.scss";
 @import "./components/basic-styles";
 @import "./utils/vars.scss";
-@import "./components/header-logo";
-@import "./components/navigation";
-@import "./components/header-contact";
 @import "./components/lorem-ipsum-list";
 @import "./components/what-we-do-section";
 @import "./components/team-section";
@@ -17,5 +14,5 @@
 @import "./components/portfolio-button";
 @import "./components/portfolio-product";
 @import "./components/section-hero";
-@import "./components/button-hamburger";
 @import "./components/mobile-menu";
+@import "./components/header";

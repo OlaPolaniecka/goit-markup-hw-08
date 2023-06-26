@@ -2,6 +2,24 @@
   transform: translateX(0);
 }
 
+.button-hamburger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    fill: $accentColor;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
 .menu-container {
   position: fixed;
   background-color: $buttonColor;

@@ -1,0 +1,112 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__logo {
+    font-family: $fontFamilyLogo;
+    font-style: bold;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    color: $primaryColor;
+  }
+  &__logo-hightlight {
+    color: $accentColor;
+  }
+}
+
+.navigation {
+  display: none;
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+    margin-left: 83px;
+  }
+
+  @include desktop {
+    margin-right: 94px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+  }
+
+  &__link {
+    color: $textColor;
+    font-size: $fontSizeSmall;
+    font-weight: 500;
+    line-height: 16px;
+
+    &:hover {
+      color: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__item-underscore {
+    position: relative;
+    top: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 53px;
+      height: 4px;
+      background-color: $accentColor;
+      border-radius: 2px;
+    }
+  }
+}
+
+.header-contact {
+  display: none;
+  gap: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 101px;
+  }
+
+  &__link {
+    font-size: $fontSizeSmall;
+    font-weight: 500;
+    line-height: 16px;
+    color: $contactColor;
+
+    &:hover {
+      color: $accentColor;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover svg {
+      fill: $accentColor;
+    }
+  }
+  &__envelope-icon {
+    margin-right: 10px;
+    fill: $contactColor;
+  }
+
+  &__smartphone-icon {
+    margin-right: 10px;
+    fill: $contactColor;
+  }
+}
