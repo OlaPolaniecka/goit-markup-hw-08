@@ -1,9 +1,15 @@
 .newsletter {
   width: 570px;
   height: 86px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 72px;
   margin-left: 78px;
+
+  @include desktop {
+    display: block;
+  }
 
   &__text {
     font-weight: 700;
@@ -17,16 +23,26 @@
 
   &__grid {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 12px;
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__input {
     background-color: $bgColor;
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @include desktop {
+      width: 358px;
+    }
   }
 
   &__button {

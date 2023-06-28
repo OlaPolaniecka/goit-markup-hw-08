@@ -6,11 +6,19 @@
   line-height: 42px;
   justify-content: center;
 
-  &__list {
+  @include desktop {
     display: flex;
+  }
+
+  &__list {
+    display: none;
     justify-content: space-between;
     gap: 30px;
     padding: 0;
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__item {

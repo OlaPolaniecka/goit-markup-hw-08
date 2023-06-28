@@ -1,10 +1,23 @@
 .page-footer {
-  display: none;
   background-color: $bgColor;
-  height: 252px;
+  height: 603px;
+
+  @include tablet {
+    height: 463px;
+  }
+
+  @include desktop {
+    height: 252px;
+  }
 
   &__blocks {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__grid {
@@ -27,7 +40,9 @@
 
   &__address {
     padding-top: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__street {

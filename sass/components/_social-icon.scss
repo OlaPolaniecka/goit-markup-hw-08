@@ -2,11 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 10px;
-  margin-left: 32px;
-  margin-right: 32px;
+  gap: 22px;
+  margin-left: 102px;
+  margin-right: 102px;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+
+  @include desktop {
+    gap: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+  }
 
   &__item {
     width: 44px;

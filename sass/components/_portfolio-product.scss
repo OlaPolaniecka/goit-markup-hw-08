@@ -65,3 +65,11 @@
     letter-spacing: 0.03em;
   }
 }
+
+div.portfolio-product__container:hover div.portfolio-product__overlay {
+  transform: translateY(0);
+}
+
+figure.portfolio-product__border {
+  margin: 0 auto;
+}
