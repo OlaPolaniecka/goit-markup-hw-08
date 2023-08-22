@@ -1,6 +1,6 @@
 .section-hero {
-  width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   max-width: 100%;
   padding-top: 32px;
   background-image: linear-gradient(
@@ -8,11 +8,23 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/image-background.jpg");
+    url("../images/imgheromob@1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/imgheromob@2x.jpg");
+  }
 
   &__container {
     padding-top: 200px;

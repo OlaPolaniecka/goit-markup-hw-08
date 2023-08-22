@@ -15,14 +15,10 @@ a {
 }
 
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @include desktop {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }

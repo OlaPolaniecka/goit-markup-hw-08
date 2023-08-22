@@ -8,9 +8,15 @@
   height: 609px;
   cursor: auto;
   margin: auto;
-  bottom: 221px;
-  left: 536px;
-  top: 221px;
+  bottom: 94px;
+  top: 93px;
+  right: 15px;
+  left: 15px;
+
+  @include tablet {
+    width: 450px;
+    height: 609px;
+  }
 
   @include desktop {
     width: 528px;
