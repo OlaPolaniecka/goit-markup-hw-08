@@ -11,14 +11,18 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &__list {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 0;
     margin-top: 20px;

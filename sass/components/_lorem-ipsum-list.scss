@@ -10,6 +10,8 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    width: 354px;
+    height: 536px;
   }
 
   @include desktop {
@@ -20,14 +22,14 @@
 
   &__icon-background {
     background-color: $bg-iconColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
   }
 
   &__icon {
-    margin-bottom: 55px;
-    margin-left: 190px;
-    margin-right: 190px;
-    margin-top: 25px;
-
     @include tablet {
       margin-left: 142px;
       margin-right: 142px;
