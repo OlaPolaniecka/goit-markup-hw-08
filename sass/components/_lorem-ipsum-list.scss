@@ -1,6 +1,5 @@
 .lorem-ipsum-list {
-  display: flex;
-  flex-direction: column;
+  display: block;
   gap: 30px;
   justify-content: center;
   list-style: none;
@@ -10,8 +9,6 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    width: 354px;
-    height: 536px;
   }
 
   @include desktop {
