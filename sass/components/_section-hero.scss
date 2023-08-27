@@ -2,6 +2,8 @@
   max-width: 480px;
   height: 400px;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 32px;
   background-image: linear-gradient(
       to right,
@@ -12,68 +14,63 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-image: url("../images/imgheromob@2x.jpg");
+  }
+
+  @include tablet {
+    max-width: 768px;
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+        90deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 0%
       ),
-      url("../images/imgheromob@2x.jpg");
+      url("../images/tabhero@1x.jpg");
 
-    @include tablet {
-      max-width: 768px;
-      height: 400px;
-      background-image: linear-gradient(
-          90deg,
-          rgba(47, 48, 58, 0.4) 0%,
-          rgba(47, 48, 58, 0.4) 0%
-        ),
-        url("../images/tabhero@1x.jpg");
-
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            90deg,
-            rgba(47, 48, 58, 0.4) 0%,
-            rgba(47, 48, 58, 0.4) 0%
-          ),
-          url("../images/tabhero@2x.jpg");
-      }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/tabhero@2x.jpg");
     }
+  }
 
-    @include desktop {
-      width: 1600px;
-      height: 600px;
-      background-image: linear-gradient(
-          90deg,
-          rgba(47, 48, 58, 0.4) 0%,
-          rgba(47, 48, 58, 0.4) 0%
-        ),
-        url("../images/deskhero@1x.jpg");
+  @include desktop {
+    width: 1600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        90deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 0%
+      ),
+      url("../images/deskhero@1x.jpg");
 
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            90deg,
-            rgba(47, 48, 58, 0.4) 0%,
-            rgba(47, 48, 58, 0.4) 0%
-          ),
-          url("../images/deskhero@2x.jpg");
-      }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/deskhero@2x.jpg");
     }
   }
 
   &__container {
     padding-bottom: 280px;
+
+    @include desktop {
+      padding-bottom: 280px;
+    }
   }
 
   &__title {
@@ -101,7 +98,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 200px;
   }
 
   &__button {
