@@ -1,6 +1,7 @@
 .page-footer {
   background-color: $bgColor;
   height: 603px;
+  padding-top: 60px;
 
   @include tablet {
     height: 463px;
@@ -15,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 60px;
 
     @include tablet {
       display: flex;
@@ -30,10 +32,6 @@
       flex-direction: row;
       text-align: left;
     }
-  }
-
-  &__grid {
-    padding-top: 60px;
   }
 
   &__link {
